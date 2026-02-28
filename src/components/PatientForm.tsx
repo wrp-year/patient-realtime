@@ -1,14 +1,11 @@
 "use client";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { useState } from "react";
 import { socket } from "@/lib/socket";
 
 export default function PatientForm() {
-  type PatientData = {
-    firstName: string;
-    lastName: string;
-    phone: string;
-  };
+  
   const [form, setForm] = useState({
     firstName: "",
     middleName: "",
