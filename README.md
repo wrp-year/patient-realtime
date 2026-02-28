@@ -21,5 +21,5 @@ This project demonstrates real-time synchronization between a patient form and a
    npm run dev
 
 4. Open:
-   - Patient: http://localhost:3000
-   - Staff: http://localhost:3000/staff
+   - Patient: https://patient-realtime.vercel.app/
+   - Staff: https://patient-realtime.vercel.app/staff
