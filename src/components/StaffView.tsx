@@ -1,8 +1,24 @@
 "use client";
-/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { useEffect, useState } from "react";
 import { socket } from "@/lib/socket";
+
+type PatientData = {
+  firstName: string;
+  middleName?: string;
+  lastName: string;
+  dob?: string;
+  gender?: string;
+  phone?: string;
+  email?: string;
+  address?: string;
+  language?: string;
+  nationality?: string;
+  emergencyName?: string;
+  emergencyRelation?: string;
+  religion?: string;
+  status?: string;
+};
 
 export default function StaffView() {
   const [data, setData] = useState<any>({});
